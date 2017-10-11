@@ -43,6 +43,20 @@ def reverse_linked_list(head):
     '321'
     """
 
+    # make new LL to be returned
+    reversed_ll = None
+
+    # use .next to traverse original LL and append to the new one
+    current = head
+
+    while current:
+        # where reversal occurs; next is assigned to reversed_ll
+        reversed_ll = Node(current.data, reversed_ll)
+        # traverse original
+        current = current.next
+
+    return reversed_ll
+
 
 if __name__ == '__main__':
     import doctest
