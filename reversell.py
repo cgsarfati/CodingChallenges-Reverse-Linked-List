@@ -43,7 +43,7 @@ def reverse_linked_list(head):
     '321'
     """
 
-    # make new LL to be returned
+    # make new LL to be returned; start w/ None to make it a tail
     reversed_ll = None
 
     # use .next to traverse original LL and append to the new one
